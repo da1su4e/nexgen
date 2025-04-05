@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+/* ---------------------------------- */
+
 *{
 	padding: 0;
 	margin: 0;
@@ -23,13 +28,15 @@ html, body{
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
-    font-family: Poppins;
+    font-family: "Roboto Mono", monospace;
 }
 
 .wrap {
     min-height: 100%;
     display: flex;
     flex-direction: column;
+    padding: 30px 50px 50px 50px;
+    background-color: #0F0F0F;
 }
 
 input, button, textarea{font-family: inherit;}
@@ -43,3 +50,96 @@ ul li{list-style-type: none;}
 img{vertical-align: top;}
 
 h1,h2, h3, h4, h5, h6{font-style: inherit; font-weight: 400;}
+
+/* ----------------------------- */
+
+.header{
+    width: 100%;
+    background-color: #1A1A1A;
+    padding: 24px 24px 24px 50px;
+    border: 1px solid #1C1C21;
+    border-radius: 16px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo__img {
+    max-width: 100%;
+}
+
+.nav__menu {
+    display: flex;
+    gap: 16px;
+    padding: 18px 0px;
+}
+
+.menu__button {
+    background-color: #0F0F0F;
+    color: #81807E;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    padding: 18px 24px;
+}
+
+.menu__button:hover {
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.active {
+    color: #E7BEB1;
+}
+
+.menu__button--contact {
+    background-color: #CE7D63;
+    color: #0F0F0F;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    padding: 18px 24px;
+}
+
+.menu__button--contact:hover {
+    background-color: #b96c55;
+    color: #0F0F0F;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 1440px){
+    .nav__menu {
+        gap: 14px;
+        padding: 14px 0px;
+    }
+    .logo__img{
+        max-width: 98px;
+        height: 18px;
+    }
+    .menu__button {
+        font-size: 14px;
+        padding: 14px 20px;
+    }
+    .menu__button--contact {
+        font-size: 14px;
+        padding: 14px 20px;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .nav__menu {
+        display: none;
+    }
+}
