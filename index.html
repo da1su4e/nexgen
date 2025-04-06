@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NexGen</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="wrap">
         <header class="header">
             <nav class="nav">
-                <a href="#" class="nav__logo"><img src="img/logo.svg" alt="logo" class="logo__img"></a>
+                <a href="#" class="nav__logo">
+                    <img src="img/logo.svg" alt="logo" class="logo__img" />
+                </a>
                 <ul class="nav__menu">
                     <li><a href="" class="menu__button active">Home</a></li>
                     <li><a href="" class="menu__button">Services</a></li>
@@ -20,7 +23,25 @@
                     <li><a href="" class="menu__button">Blogs</a></li>
                     <li><a href="" class="menu__button--contact">Contact Us</a></li>
                 </ul>
+                <div class="nav__burger" id="burgerBtn">
+                    <img src="img/burger.svg" alt="menu" />
+                </div>
             </nav>
+            <div class="mobile-menu" id="mobileMenu">
+                <i class="fa-solid fa-xmark x" id="exit"></i>
+                <div class="mobile-logo">
+                    <img src="img/logo.svg" alt="logo" class="logo__img" />
+                </div>
+                <ul class="mobile-menu__list">
+                    <li><a href="" class="menu__button active">Home</a></li>
+                    <li><a href="" class="menu__button">Services</a></li>
+                    <li><a href="" class="menu__button">Projects</a></li>
+                    <li><a href="" class="menu__button">About</a></li>
+                    <li><a href="" class="menu__button">Careers</a></li>
+                    <li><a href="" class="menu__button">Blogs</a></li>
+                    <li><a href="" class="menu__button--contact">Contact Us</a></li>
+                </ul>
+            </div>
         </header>
     </div>
     <script src="js/script.js"></script>
